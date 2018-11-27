@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace chsarp
+namespace HelloWorld
 {
     class Program
     {
