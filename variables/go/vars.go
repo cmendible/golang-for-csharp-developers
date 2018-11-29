@@ -20,6 +20,6 @@ func main() {
 	username := "cmendibl3"
 	pi := 3.14
 
-	// Priting variables so the app compiles.
+	// Printing variables so the app builds.
 	fmt.Println(string(i+j+k) + c + ch + fmt.Sprintf("%f", total) + string(n) + name + fmt.Sprintf("%f", average) + string(z) + username + fmt.Sprintf("%f", pi))
 }
