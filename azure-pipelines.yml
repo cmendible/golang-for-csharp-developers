@@ -19,10 +19,10 @@ steps:
     echo '##vso[task.prependpath]$(GOROOT)/bin'
   displayName: 'Set up the Go workspace'
 
-- script: ls -fi *.go -rec | % { go build $_.FullName }
+- script: find . -type f \( -iname "*.go" \) | xargs -n1 go build
   workingDirectory: '$(modulePath)'
   displayName: 'Building all go projetcs'
 
-- script: ls -fi *.csharp -rec | % { dotnet build $_.FullName }
+- script: find . -type f \( -iname "*.csproj" \) | xargs -n1 dotnet build
   workingDirectory: '$(modulePath)'
   displayName: 'Building all csharp projetcs'
