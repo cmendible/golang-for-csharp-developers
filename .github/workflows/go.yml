@@ -1,36 +1,34 @@
 name: Go
 on: [push]
 jobs:
-
   build:
     name: Build
     runs-on: ubuntu-latest
     steps:
+      - name: Set up Go 1.13
+        uses: actions/setup-go@v1
+        with:
+          go-version: 1.13
+        id: go
 
-    - name: Set up Go 1.13
-      uses: actions/setup-go@v1
-      with:
-        go-version: 1.13
-      id: go
+      - name: Check out code into the Go module directory
+        uses: actions/checkout@v1
 
-    - name: Check out code into the Go module directory
-      uses: actions/checkout@v1
+      - name: Get dependencies
+        run: |
+          go get -v -t -d ./...
+          if [ -f Gopkg.toml ]; then
+              curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
+              dep ensure
+          fi
 
-    - name: Get dependencies
-      run: |
-        go get -v -t -d ./...
-        if [ -f Gopkg.toml ]; then
-            curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
-            dep ensure
-        fi
+      - name: Build
+        run: find . -type f \( -iname "*.go" \) | xargs -n1 -I {} sh -c 'ff="{}"; f=$(basename {}); f=./bin/${f%.*}; go build -o $f $ff'
 
-    - name: Build
-      run: find . -type f \( -iname "*.go" \) | xargs -n1 -I {} sh -c 'ff="{}"; f=$(basename {}); f=./bin/${f%.*}; go build -o $f $ff'
-      
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: 3.0.100
-      
-    - name: Build with dotnet
-      run: find . -type f \( -iname "*.csproj" \) | xargs -n1 dotnet build
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 3.1.101
+
+      - name: Build with dotnet
+        run: find . -type f \( -iname "*.csproj" \) | xargs -n1 dotnet build
