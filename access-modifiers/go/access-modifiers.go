@@ -14,7 +14,7 @@ func (u Student) GetPassword() string {
 	return u.getPassword()
 }
 
-// secretPassword is a Private function
+// getPassword is a Private function
 func (u Student) getPassword() string {
 	return u.password
 }
