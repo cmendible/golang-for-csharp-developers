@@ -1,3 +1,5 @@
+![Build](https://github.com/cmendible/golang-for-csharp-developers/workflows/Build/badge.svg)
+
 # Go for C# developers
 
 This go for C# developers shows C# developers some equivalences between both languages, helping the reader leverage on its knowledge to learn the new language.
