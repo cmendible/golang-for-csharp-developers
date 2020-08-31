@@ -22,7 +22,7 @@ package main
 namespace HelloWorld
 ```
 
-IMPORTANT: Why the namespace is go is main? go requires that a package "main" and a function "main" exists, in order to execute a program. Hence the difference between examples
+IMPORTANT: Why is the namespace in go: main? go requires that a package "main" and a function "main" exists, in order to execute a program. Hence the difference between examples
 
 ## Import is Using
 

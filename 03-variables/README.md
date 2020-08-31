@@ -3,7 +3,7 @@
 Concepts you will learn
 
 * Variable declaration
-* go don't like unused variables!
+* go doesn't like unused variables!
 
 ## Variable declaration
 
@@ -17,13 +17,13 @@ username := "cmendibl3"
 
 There is no equivalent in the C# world to this way of variable declaration/initialisation
 
-Option 2: var-like initialisation, single with default value and multiple without default vaule
+Option 2: var-like initialisation, single with default value and multiple without default value
 
 go
 
 ```go
 var name = "cmendibl3" // variable declaration with default value. Type is inferred.
-var i, j, k int // multiple varaible declaration without default value. You should specify the variable type
+var i, j, k int // multiple variable declaration without default value. You should specify the variable type
 ```
 
 C#
