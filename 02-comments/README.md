@@ -5,7 +5,7 @@ Concepts you will learn
 * Inline comments
 * Multiline comments
 
-Golang are very simple and familiar as you can see.
+Golang comments are very simple and familiar as you can see.
 
 ``` golang
 // Single line comment in GO
