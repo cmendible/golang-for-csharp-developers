@@ -1,6 +1,6 @@
 # Hello world
 
-This first tutorial demonstrates how a hello world looks like in the golang world.
+This first tutorial demonstrates what hello world looks like in the golang world.
 
 Go concepts you will learn
 
@@ -12,7 +12,7 @@ Go concepts you will learn
 
 ## Package is Namespace
 
-The first concept you will learn is "package". We can compare a package with a C# namespace
+The first concept you will learn is "package". We can compare a package to a C# namespace
 
 ```go
 package main
@@ -22,7 +22,7 @@ package main
 namespace HelloWorld
 ```
 
-IMPORTANT: Why is the namespace in go: main? go requires that a package "main" and a function "main" exists, in order to execute a program. Hence the difference between examples
+IMPORTANT: Why is the namespace in go: main? go requires that a package "main" and a function "main" exists, in order to execute a program. Hence the difference between the examples.
 
 ## Import is Using
 
@@ -42,7 +42,7 @@ Check the golang [documentation](https://golang.org/pkg/) to learn about all the
 
 ## We can use fmt to print things to the console
 
-Finally, we can see fmt like a util that is approxiamtely the same as the standard Console class in C# (As will learn, go don't have classes)
+Finally, we can see fmt like a util that is approxiamtely the same as the standard Console class in C# (As you will learn, go doesn't have classes)
 
 ```go
 fmt.Println("Hello C# Developers!!!")
@@ -52,11 +52,11 @@ fmt.Println("Hello C# Developers!!!")
 Console.WriteLine("Hello C# Developers!!!");
 ```
 
-IMPORTANT: Remember that go requires a ```package main``` and ```func() main``` to find the entrypoint?
+IMPORTANT: Remember that go requires a ```package main``` and ```func() main``` to find the entrypoint.
 
 ## Run the example
 
-The ```go run``` command will help you running a go program.
+The ```go run``` command will help you run a go program.
 
 IMPORTANT: go run requires you to pass all .go files required to run the go routine.
 

@@ -7,7 +7,7 @@ Concepts you will learn
 
 ## Variable declaration
 
-As you can see in the example, go offers to types of variable declaration and initialisation:
+As you can see in the example, go offers two types of variable declaration and initialisation:
 
 Option 1: definition without var (the most common)
 
@@ -34,7 +34,7 @@ string name = "cmendibl3"; // Explicit type defintion
 int i, j, k; // Defining multiple variables with explicit type defition
 ```
 
-Both options are equivalent
+Both options are equivalent.
 
 ## Go don't like unused variables
 
@@ -56,4 +56,4 @@ go run vars.go
 ./vars.go:19:2: too many errors
 ```
 
-IMPORTANT: Go don't like unused variables. It won't allow you to run or build your program if you have any!
+IMPORTANT: Go doesn't like unused variables. It won't allow you to run or build your program if you have any!

@@ -15,20 +15,22 @@ var a [2]int // Declares an array of integers whose capacity is 2. The size can'
 series := [4]int{1, 3, 5, 7} // Declares an array of integers whose capacity is 4. The size can't be changed
 ```
 
-Unlike C# or Java (where arrays are object refence types), arrays in Go are values. If you assign an array to another value or you pass it to a function it is automatically copied (pass by value). Furthermore, a go array has a fixed length and it can't be changed.
+Unlike C# or Java (where arrays are object reference types), arrays in Go are values. If you assign an array to another value or you pass it to a function it is automatically copied (pass by value). Furthermore, a go array has a fixed length and it can't be changed.
 
 ## Slices to the rescue
 
-On the other hand, go slices are like C# or Java, reference type structures on which we can append, delete by simply using append or delete functions.
+On the other hand, go slices are like C# or Java, reference type structures to which we can append and delete simply by using the append() or delete() functions.
 
-Been a reference type also make slices much more memory efficient, as assigning the value to a new variable or passing the slice to a function won't create a new copy.
+Being a reference type also make slices much more memory efficient, since assigning the value to a new variable or passing the slice to a function won't create a new copy.
 
-A go slice is defined as follows. Very similar to an array, but please note we don't specify the length:
+A go slice is defined as follows:
 
 ```go
 // Slice
 numbers := []int{1, 3, 5, 7} // We have 4 items
 ```
+
+This is very similar to an array, but please note we didn't specify the length.
 
 And this is the slice equivalent in C#:
 
