@@ -2,8 +2,8 @@
 
 # Go for C# developers
 
-This go for C# developers shows C# developers some equivalences between both languages, helping the reader leverage on its knowledge to learn the new language.
+This go for C# developers tutorial shows C# developers some equivalences between both languages, helping the reader leverage their knowledge to learn the new language.
 
-The tutorial is orderder from basic to more complex topics.
+The tutorial is ordered from basic to more complex topics.
 
-On each example you will find (WIP) a README file with a brief explanation of the difference and golang concepts introduced
+In each example you will find (WIP) a README file with a brief explanation of the differences and golang concepts introduced.

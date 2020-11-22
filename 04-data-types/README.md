@@ -5,7 +5,7 @@ Concepts you will learn
 * Basic data types in go
 * Pass by reference
 
-Go supports the common data types we expect from a programming language
+Go supports the common data types we would expect from a programming language
 
 * bool
 * string
