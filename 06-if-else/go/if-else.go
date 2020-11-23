@@ -13,6 +13,6 @@ func main() {
 	} else if value == 0 {
 		fmt.Println("value is 0")
 	} else {
-		fmt.Println("value is postive")
+		fmt.Println("value is positive")
 	}
 }

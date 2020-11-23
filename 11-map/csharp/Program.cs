@@ -11,14 +11,14 @@ namespace Dictionaries
             Console.WriteLine("Dictionary (maps) in C#");
 
             // dictionary with student grades
-            var grades = new Dictionary<string, int> { { "math", 5 }, { "chemestry", 5 } };
+            var grades = new Dictionary<string, int> { { "math", 5 }, { "chemistry", 5 } };
 
             // print the math score
             Console.WriteLine(grades["math"]);
 
-            if (grades.ContainsKey("chemestry"))
+            if (grades.ContainsKey("chemistry"))
             {
-                Console.WriteLine(grades["chemestry"]);
+                Console.WriteLine(grades["chemistry"]);
             }
         }
     }

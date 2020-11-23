@@ -9,7 +9,7 @@ func main() {
 	fmt.Println("json in Go")
 
 	// map with student grades
-	grades := map[string]int{"math": 5, "chemestry": 5}
+	grades := map[string]int{"math": 5, "chemistry": 5}
 
 	// marshal the map type to json string
 	jsonBytes, _ := json.Marshal(grades)

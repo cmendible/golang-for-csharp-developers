@@ -11,7 +11,7 @@ namespace json
             Console.WriteLine("json in C#");
 
             // dictionary with student grades
-            var grades = new Dictionary<string, int> { { "math", 5 }, { "chemestry", 5 } };
+            var grades = new Dictionary<string, int> { { "math", 5 }, { "chemistry", 5 } };
 
             // serialize the dictionary to json string
             var jsonString = JsonConvert.SerializeObject(grades);

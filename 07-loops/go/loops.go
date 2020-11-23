@@ -22,7 +22,7 @@ func main() {
 	fmt.Println(total)
 
 	// for each loop
-	scores := map[string]int{"math": 5, "chemestry": 5}
+	scores := map[string]int{"math": 5, "chemistry": 5}
 	for k, v := range scores {
 		fmt.Printf("%s: %s\n", k, strconv.Itoa(v))
 	}

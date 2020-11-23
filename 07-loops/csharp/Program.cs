@@ -26,7 +26,7 @@ namespace Loops
             Console.WriteLine(total);
 
             // for each loop
-            var scores = new Dictionary<string, int> { { "math", 5 }, { "chemestry", 5 } };
+            var scores = new Dictionary<string, int> { { "math", 5 }, { "chemistry", 5 } };
             foreach (var kv in scores)
             {
                 Console.WriteLine($"{kv.Key}: {kv.Value}");
