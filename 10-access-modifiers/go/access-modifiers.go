@@ -20,7 +20,7 @@ func (u Student) getPassword() string {
 }
 
 func main() {
-	fmt.Println("Acces Modifiers in Go")
+	fmt.Println("Access Modifiers in Go")
 
 	student := Student{"username@student.io", "password"}
 	fmt.Println("email: " + student.Email)

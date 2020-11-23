@@ -6,7 +6,7 @@ namespace Disposing
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("erros in C#");
+            Console.WriteLine("errors in C#");
 
             var numbers = new int[] { -1, 5 };
             foreach (var num in numbers)

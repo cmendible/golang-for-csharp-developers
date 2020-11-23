@@ -18,7 +18,7 @@ func getGenerationName(yearOfBirth int) {
 }
 
 func main() {
-	fmt.Println("Swith in Go")
+	fmt.Println("Switch in Go")
 
 	getGenerationName(1975)
 }

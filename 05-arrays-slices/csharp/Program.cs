@@ -11,7 +11,7 @@ namespace arrays
             Console.WriteLine("Arrays in C#");
 
             // Array of int
-            // Array lenght must be set a declaration time.
+            // Array length must be set a declaration time.
             var series = new int[4] { 1, 2, 5, 7 };
             series.Dump();
             var fruits = new string[3] { "banana", "apple", "pear" };
@@ -37,7 +37,7 @@ namespace arrays
             var segment = span[2..4];
             segment.Dump();
 
-            // Copy the array tyo another 
+            // Copy the array to another 
             var newArray = new int[numbers.Length];
             numbers.CopyTo(newArray, 0);
         }

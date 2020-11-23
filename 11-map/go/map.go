@@ -6,14 +6,14 @@ func main() {
 	fmt.Println("Maps in Go")
 
 	// grades maps
-	grades := map[string]int{"math": 5, "chemestry": 5}
+	grades := map[string]int{"math": 5, "chemistry": 5}
 
 	// Printing the math score.
 	fmt.Println(grades["math"])
 
 	// check if key is present
-	chemestry, ok := grades["chemestry"]
+	chemistry, ok := grades["chemistry"]
 	if ok {
-		fmt.Println(chemestry)
+		fmt.Println(chemistry)
 	}
 }
